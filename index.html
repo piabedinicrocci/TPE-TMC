@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+    <title>Llenado de un tanque</title>
+</head>
+<body>
+    <div class="contenedor_general">
+        <form class="formulario">
+            <div class="casillas">
+                <h1>Tiempo</h1>
+                <input class="casilla" type="number" step="any" name="tiempo" id="tiempo" placeholder="Tiempo">
+                <h1>Área</h1>
+                <input class="casilla" type="number" step="any" name="area" id="area" placeholder="Área del tanque">
+                <h1>Altura del tanque</h1>
+                <input class="casilla" type="number" step="any" name="altura_tanque" id="altura_tanque" placeholder="Altura del tanque">
+                <h1>Altura del agua</h1>
+                <input class="casilla" type="number" step="any" name="altura_agua" id="altura_agua" placeholder="Altura inicial de agua">
+                <h1>Entrada de agua</h1>
+                <input class="casilla" type="number" step="any" name="entrada" id="entrada" placeholder="Entrada de agua">
+                <h1>Salida de agua</h1>
+                <input class="casilla" type="number" step="any" name="salida" id="salida" placeholder="Salida de agua">
+                <h1>Parámetro K</h1>
+                <input class="casilla" type="number" step="any" name="K" id="K" placeholder="K">
+                <h1>Parámetro W</h1>
+                <input class="casilla" type="number" step="any" name="W" id="W" placeholder="W">
+                <h1>Parámetro G</h1>
+                <input class="casilla" type="number" step="any" name="G" id="G" placeholder="G">
+            </div>
+            <div class="botones">
+                <button class="boton" id="btn_1">Simular Entrada y Salida constantes</button>
+                <button class="boton" id="btn_2">Simular S(t) = K * t</button>
+                <button class="boton" id="btn_3">Simular S(t) = W * t²</button>
+                <button class="boton" id="btn_4">Simular S(t) = G/A * h(t)</button>
+                <p>El tanque se llenó a la mitad en: <spam id="TML"></spam> segundos. Iteraciones: <spam id ="TMLI"></spam></p>
+                <p>El tanque se llenó en: <spam id="TL"></spam> segundos. Iteraciones: <spam id ="TLI"></spam></p>
+                <p>El tanque se vació en: <spam id="TV"></spam> segundos. Iteraciones: <spam id ="TVI"></spam></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
